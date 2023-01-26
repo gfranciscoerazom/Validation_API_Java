@@ -115,4 +115,13 @@ public class Validation {
     public static boolean validateEmail(String string) {
         return string.matches("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$");
     }
+
+    /**
+     * Método estático que valida si un un string es un número de teléfono válido
+     * @param string String a validar
+     * @return true si el string es un número de teléfono válido, false si no
+     */
+    public static boolean validatePhoneNumber(String string) {
+        return string.matches("^\\d{9}$");
+    }
 }
