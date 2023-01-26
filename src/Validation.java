@@ -27,4 +27,22 @@ public class Validation {
     public static boolean isNegativeNumber(double number) {
         return number < 0;
     }
+
+    /**
+     * Método estático que valida si un número es par
+     * @param number Número a validar
+     * @return true si el número es par, false si no
+     */
+    public static boolean isEvenNumber(double number) {
+        return number % 2 == 0;
+    }
+
+    /**
+     * Método estático que valida si un número es impar
+     * @param number Número a validar
+     * @return true si el número es impar, false si no
+     */
+    public static boolean isOddNumber(double number) {
+        return number % 2 != 0;
+    }
 }
