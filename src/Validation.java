@@ -106,4 +106,13 @@ public class Validation {
             return false;
         }
     }
+
+    /**
+     * Método estático que valida si un un string es un e-mail válido
+     * @param string String a validar
+     * @return true si el string es un e-mail válido, false si no
+     */
+    public static boolean validateEmail(String string) {
+        return string.matches("^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$");
+    }
 }
